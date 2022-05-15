@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  mytimetable:
+    image: mytimetable
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:4200
+    volumes: 
+      - my-timetable-volume:/my-timetable/storage   
+      
+volumes:
+  my-timetable-volume:
+

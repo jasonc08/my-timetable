@@ -1,4 +1,4 @@
-FROM node:16.13.1
+FROM node:16.13.1-alpine
 ENV Node_ENV production
 WORKDIR /my-timetable/
 COPY package*.json ./
