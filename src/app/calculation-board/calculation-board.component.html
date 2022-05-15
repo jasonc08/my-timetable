@@ -1,0 +1,29 @@
+<div class="container">
+  <input type="text" class="form-control" [(ngModel)]="code" (input)="codeOnChange()" readonly />
+  <div class="time" *ngIf="startTime" >
+    {{startTime}} 至 {{endTime}}
+  </div>
+
+</div>
+
+
+<div class="keyboard">
+  <div>
+    <div class="keybtn numbtn"  [ngClass]="{'active': num == item.num }" *ngFor="let item of numKeys" (click)="numClick(item.num)">
+      {{item.num}}
+    </div>
+  </div>
+  <hr/>
+  <div>
+    <div class="keybtn letter1btn" [ngClass]="{'active': letter1 == item.key }" *ngFor="let item of letterKeys" (click)="letter1Click(item.code)">
+      {{item.key}}
+    </div>
+  </div>
+  <hr/>
+  <div>
+    <div class="keybtn letter2btn" [ngClass]="{'active': letter2 == item.key }"  *ngFor="let item of letterKeys" (click)="letter2Click(item.code)">
+      {{item.key}}
+    </div>
+  </div>
+</div>
+

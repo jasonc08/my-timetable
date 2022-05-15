@@ -1,0 +1,67 @@
+input{
+  margin: 20px 0 20px 0;
+  color: black;
+}
+.container {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.keybtn{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: block;
+  line-height: 30px;
+  float: left;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.keyboard{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+
+}
+
+.keyboard>div{
+
+
+  display: inline-block;
+}
+
+.numbtn{
+  background-color: purple;
+}
+.letter1btn{
+  background-color: green;
+}
+.letter2btn{
+  background-color: red;
+}
+.numbtn.active{
+  background-color: pink;
+  color: black;
+}
+.letter1btn.active{
+  background-color: pink;
+  color: black;
+}
+.letter2btn.active{
+  background-color: pink;
+  color: black;
+}
+div.time{
+
+  background-color: white;
+  color: black;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
